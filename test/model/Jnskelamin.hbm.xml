@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 1, 2019 6:25:35 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="loginmitrais" name="model.Jnskelamin" optimistic-lock="version" schema="dbo" table="jnskelamin">
+    <id name="idkelamin" type="int">
+      <column name="idkelamin"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="jnskelamin" type="string">
+      <column length="50" name="jnskelamin"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 1, 2019 6:25:35 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="loginmitrais" name="model.Registrasi" optimistic-lock="version" schema="dbo" table="registrasi">
+    <id name="idlogin" type="int">
+      <column name="idlogin"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="namadepan" type="string">
+      <column length="100" name="namadepan" not-null="true"/>
+    </property>
+    <property name="nambelakang" type="string">
+      <column length="100" name="nambelakang" not-null="true"/>
+    </property>
+    <property name="tgllahir" type="string">
+      <column length="50" name="tgllahir"/>
+    </property>
+    <property name="idkelamin" type="java.lang.Integer">
+      <column name="idkelamin"/>
+    </property>
+    <property name="email" type="string">
+      <column length="50" name="email" not-null="true"/>
+    </property>
+    <property name="nohp" type="string">
+      <column length="50" name="nohp" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
